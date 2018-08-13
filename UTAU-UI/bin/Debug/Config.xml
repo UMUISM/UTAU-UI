@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--FastResampler配置文件-->
-<FastResampler>
+<config>
 	<options>
 		<resampler-mode>exe</resampler-mode><!--选择resampler调用方式(dll/exe)。注意：使用exe调用后就无法使用扩展oto功能了-->
 		<resampler>{0}resampler.exe</resampler><!--resampler的路径 path of resampler engine {0} means the path of FastResampler-->
@@ -10,4 +9,4 @@
 		<show-console>false</show-console><!--是否显示cmd输出窗口 Show cmd window (true/false)-->
 		<language>auto</language><!--语言设定 language setting [e.g. auto(跟随系统 following system)/zh-CN/jp/en-US]-->
 	</options>
-</FastResampler>
+</config>

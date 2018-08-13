@@ -70,12 +70,11 @@ namespace UI
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            this.Text = lang.fetch("正在合成……");
+            this.Text = lang.fetch("正在合成…… - UTAU UI");
             label1.Text = lang.fetch("合成进度：");
             label2.Text = lang.fetch("拼接进度：");
             labelStatus.Text = lang.fetch("加载中……");
             Control.CheckForIllegalCrossThreadCalls = false;
-            //System.Environment.CurrentDirectory = @"C:\Users\Administrator\AppData\Local\Temp\utau1";
             string batFile = System.Environment.CurrentDirectory + "\\temp.bat";
             if (!this.config.showConsole)
             {
@@ -118,6 +117,11 @@ namespace UI
         }
 
         private void progressBar1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }

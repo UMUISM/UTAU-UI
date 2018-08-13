@@ -77,7 +77,6 @@
       <DependentUpon>UTAU-UI.cs</DependentUpon>
     </Compile>
     <Compile Include="LangPack.cs" />
-    <Compile Include="List.cs" />
     <Compile Include="Oto.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

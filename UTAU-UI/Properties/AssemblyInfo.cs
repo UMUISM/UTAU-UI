@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // 有关程序集的常规信息通过以下
 // 特性集控制。更改这些特性值可修改
 // 与程序集关联的信息。
-[assembly: AssemblyTitle("FastResampler")]
-[assembly: AssemblyDescription("A GUI resampler tool for UTAU")]
+[assembly: AssemblyTitle("")]
+[assembly: AssemblyDescription("A GUI Engine for UTAU")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("FastResampler")]
+[assembly: AssemblyProduct("")]
 [assembly: AssemblyCopyright("Copyright ©  2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

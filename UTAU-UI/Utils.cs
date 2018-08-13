@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Runtime.InteropServices;
 using System.Diagnostics;
 using System.IO;
@@ -16,14 +14,14 @@ namespace UI
         static extern bool ShowWindow(IntPtr hWnd, uint nCmdShow);
         [DllImport("user32.dll", EntryPoint = "FindWindow", SetLastError = true)]
         public static extern IntPtr FindWindow(string lpClassName, string lpWindowName);
-        public static string tempTitle = "fastw4u - " + GetRandomString(10, true, true, true, false, "");
+        public static string tempTitle = "UTAU UI";
         public static void hideBat()
         {
             Console.Title = tempTitle;
             IntPtr intptr = FindWindow("ConsoleWindowClass", tempTitle);
             if (intptr != IntPtr.Zero)
             {
-                ShowWindow(intptr, 0);//隐藏这个窗口
+               ShowWindow(intptr, 0);//隐藏这个窗口
             }
         }
 
@@ -33,7 +31,7 @@ namespace UI
             IntPtr intptr = FindWindow("ConsoleWindowClass", tempTitle);
             if (intptr != IntPtr.Zero)
             {
-                ShowWindow(intptr, 1);//隐藏这个窗口
+                ShowWindow(intptr, 1);//不隐藏这个窗口
             }
         }
 
