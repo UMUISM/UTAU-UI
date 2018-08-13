@@ -5,7 +5,7 @@ using System.Threading;
 
 namespace UI
 {
-    public partial class GUI : Form
+    public partial class Form1 : Form
     {
         public int progress1MaxNum;
         public int progress1NowNum;
@@ -16,10 +16,10 @@ namespace UI
         public LangPack lang;
         public string rootDir = System.AppDomain.CurrentDomain.SetupInformation.ApplicationBase;
         
-        public GUI()
+        public Form1()
         {
             InitializeComponent();
-            this.config = new Config(this.rootDir + "uiconfig.xml");
+            this.config = new Config(this.rootDir + "Config.xml");
             this.lang = new LangPack(rootDir + "language.xml", config);
         }
 
@@ -75,6 +75,7 @@ namespace UI
             label2.Text = lang.fetch("拼接进度：");
             labelStatus.Text = lang.fetch("加载中……");
             Control.CheckForIllegalCrossThreadCalls = false;
+            //System.Environment.CurrentDirectory = @"C:\Users\Administrator\AppData\Local\Temp\utau1";
             string batFile = System.Environment.CurrentDirectory + "\\temp.bat";
             if (!this.config.showConsole)
             {

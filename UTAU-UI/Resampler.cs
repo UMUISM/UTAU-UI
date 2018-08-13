@@ -30,7 +30,7 @@ namespace UI
         public string wavtoolPath;
         public string batfile;
         public UtauBat bat;
-        public GUI mainForm;
+        public Form1 mainForm;
 
         private int[] threadParseList;
         private int returnedThreads = 0;
@@ -42,7 +42,7 @@ namespace UI
         private EventWaitHandle _mainWaitHandle = new AutoResetEvent(false);
         private EventWaitHandle _wavtoolWaitHandle = new AutoResetEvent(false);
 
-        public Resampler(string batfile, GUI form)
+        public Resampler(string batfile, Form1 form)
         {
             this.batfile = batfile;
             this.mainForm = form;

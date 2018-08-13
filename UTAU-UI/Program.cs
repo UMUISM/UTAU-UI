@@ -18,9 +18,13 @@ namespace UI
             Application.SetCompatibleTextRenderingDefault(false);
             try
             {
-                Application.Run(new GUI());
+                Application.Run(new Form1());
             }
-            catch { }
+            catch (Exception e)
+            {
+               /* Console.WriteLine(e.Message);
+                Console.ReadKey();*/
+            }
         }
     }
 }

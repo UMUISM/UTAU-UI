@@ -27,7 +27,7 @@ namespace UI
         {
             try
             {
-                XmlNodeList root = this.conf.GetElementsByTagName("UIconfig");
+                XmlNodeList root = this.conf.GetElementsByTagName("FastResampler");
                 if (root.Count > 0)
                 {
                     XmlElement options = (XmlElement)(((XmlElement)root[0]).GetElementsByTagName("options")[0]);
