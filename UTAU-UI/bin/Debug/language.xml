@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<languages>
+	<lang name="original">
+		<p id="1">正在合成……</p>
+		<p id="2">合成进度：</p>
+		<p id="3">拼接进度：</p>
+		<p id="4">加载中……</p>
+		<p id="5">正在解析数据……</p>
+		<p id="6">请在UTAU中调用！</p>
+		<p id="7">错误</p>
+		<p id="8">正在合成</p>
+		<p id="9">正在拼接</p>
+		<p id="10">文件不存在：</p>
+	</lang>
+	<!--author: hyperzlib-->
+	<lang name="en-US,en-GB,en-AU,en-CA">
+		<p id="1">synthesizing...</p>
+		<p id="2">Synthesis progress:</p>
+		<p id="3">Stitching progress:</p>
+		<p id="4">Loading...</p>
+		<p id="5">Parsing...</p>
+		<p id="6">Please use as UTAU engine!</p>
+		<p id="7">Error</p>
+		<p id="8">Synthesizing...</p>
+		<p id="9">Stitching...</p>
+		<p id="10">File not exist: </p>
+	</lang>
+	<!--use machine translate-->
+	<lang name="jp,jp-JA">
+		<p id="1">を合成しています……</p>
+		<p id="2">合成スケジュール:</p>
+		<p id="3">アップロード:</p>
+		<p id="4">リロード中……</p>
+		<p id="5">データを解析しています……</p>
+		<p id="6">UTAUに呼び出してください！</p>
+		<p id="7">誤り</p>
+		<p id="8">合成している</p>
+		<p id="9">続いている</p>
+		<p id="10">ファイルは存在しない：</p>
+	</lang>
+	<!--author: IDOLTASH-->
+	<lang name="it,it-IT,it-CH">
+		<p id="1">Sintetizzando...</p>
+		<p id="2">Progresso sintesi:</p>
+		<p id="3">Progresso unione:</p>
+		<p id="4">Caricamento...</p>
+		<p id="5">Analisi...</p>
+		<p id="6">Usa solo su UTAU, grazie!</p>
+		<p id="7">Errore</p>
+		<p id="8">Sintetizzando...</p>
+		<p id="9">Unendo...</p>
+		<p id="10">File non esiste: </p>
+	</lang>
+</languages>
