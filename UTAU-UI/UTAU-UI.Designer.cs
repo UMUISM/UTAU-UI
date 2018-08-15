@@ -36,7 +36,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.progressWavtool = new System.Windows.Forms.ProgressBar();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.statusStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // progressResampler
@@ -46,7 +48,7 @@
             this.progressResampler.ForeColor = System.Drawing.Color.Red;
             this.progressResampler.Location = new System.Drawing.Point(12, 25);
             this.progressResampler.Name = "progressResampler";
-            this.progressResampler.Size = new System.Drawing.Size(508, 23);
+            this.progressResampler.Size = new System.Drawing.Size(345, 23);
             this.progressResampler.TabIndex = 0;
             this.progressResampler.Click += new System.EventHandler(this.progressBar1_Click);
             // 
@@ -55,9 +57,9 @@
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.labelStatus,
             this.labelStatusWavtool});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 114);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 452);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(535, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(367, 22);
             this.statusStrip1.SizingGrip = false;
             this.statusStrip1.TabIndex = 1;
             this.statusStrip1.Text = "statusStrip1";
@@ -100,15 +102,27 @@
             this.progressWavtool.ForeColor = System.Drawing.Color.Red;
             this.progressWavtool.Location = new System.Drawing.Point(12, 80);
             this.progressWavtool.Name = "progressWavtool";
-            this.progressWavtool.Size = new System.Drawing.Size(508, 23);
+            this.progressWavtool.Size = new System.Drawing.Size(345, 23);
             this.progressWavtool.TabIndex = 4;
             this.progressWavtool.Click += new System.EventHandler(this.progressBar2_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
+            this.pictureBox1.Location = new System.Drawing.Point(12, 109);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(345, 326);
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(535, 136);
+            this.ClientSize = new System.Drawing.Size(367, 474);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.progressWavtool);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -123,6 +137,7 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -137,6 +152,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ProgressBar progressWavtool;
         private System.Windows.Forms.ToolStripStatusLabel labelStatusWavtool;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

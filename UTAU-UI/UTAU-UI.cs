@@ -70,7 +70,7 @@ namespace UI
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            this.Text = lang.fetch("正在合成…… - UTAU UI");
+            this.Text = lang.fetch("正在合成 - UTAU UI");
             label1.Text = lang.fetch("合成进度：");
             label2.Text = lang.fetch("拼接进度：");
             labelStatus.Text = lang.fetch("加载中……");
@@ -122,6 +122,11 @@ namespace UI
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }
