@@ -2,7 +2,7 @@
 A GUI UTAU Engine progress
 
 ## 使用说明
-![1](https://raw.githubusercontent.com/740291272/UTAU-UI/master/pic/1.pmg)
+![1](https://raw.githubusercontent.com/740291272/UTAU-UI/master/pic/1.png)
 
 将resampler与wavtool设置为UTAU-UI即可
 
