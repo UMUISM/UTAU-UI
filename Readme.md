@@ -1,2 +1,2 @@
 # UTAU-UI
-A GUI UTAU Engine progress Based on FastResampler
+A GUI UTAU Engine progress
