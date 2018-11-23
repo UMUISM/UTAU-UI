@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+using System.Windows.Forms;
 using System.Xml;
 
 namespace UI
@@ -18,9 +16,9 @@ namespace UI
         public bool showConsole = false;
         public Config(string file)
         {
-            this.conf = new XmlDocument();
-            this.conf.Load(file);
-            this.initConfig();
+            conf = new XmlDocument();
+            conf.Load(file);
+            initConfig();
         }
 
         public bool initConfig()

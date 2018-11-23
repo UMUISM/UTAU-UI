@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.IO;
 
 namespace UI
 {
@@ -72,7 +70,7 @@ namespace UI
                     switch (args[0])
                     {
                         case "@set":
-                            //将cmd变量存入临时变量
+                            // 将cmd变量存入临时变量
                             string[] t = line.Substring(5).Split('=');
                             if (t.Length == 2)
                             {

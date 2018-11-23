@@ -2,6 +2,7 @@
 using System.Windows.Forms;
 using System.IO;
 using System.Threading;
+using System.Text;
 
 namespace UI
 {
@@ -19,31 +20,31 @@ namespace UI
         public Form1()
         {
             InitializeComponent();
-            this.config = new Config(this.rootDir + "Config.xml");
-            this.lang = new LangPack(rootDir + "language.xml", config);
+            config = new Config(rootDir + "Config.xml");
+            lang = new LangPack(rootDir + "language.xml", config);
         }
 
         public void SetProgress1MaxNum(int max)
         {
-            this.progress1MaxNum = max;
+            progress1MaxNum = max;
         }
 
         public void SetProgress1NowNum(int now)
         {
-            this.progress1NowNum = now;
-            int progress = Convert.ToInt32(Math.Round(Convert.ToDouble(this.progress1NowNum) / Convert.ToDouble(this.progress1MaxNum) * 100));
-            labelStatus.Text = string.Format("{0} ({1}/{2}) {3}%", this.status1, this.progress1NowNum, this.progress1MaxNum, progress);
+            progress1NowNum = now;
+            int progress = Convert.ToInt32(Math.Round(Convert.ToDouble(progress1NowNum) / Convert.ToDouble(progress1MaxNum) * 100));
+            labelStatus.Text = string.Format("{0} ({1}/{2}) {3}%", status1, progress1NowNum, progress1MaxNum, progress);
             progressResampler.Value = progress;
         }
 
         public void SetProgress2MaxNum(int max)
         {
-            this.progress2MaxNum = max;
+            progress2MaxNum = max;
         }
 
         public void SetProgress2NowNum(int now, bool multiThread = false)
         {
-            this.progress2NowNum = now;
+            progress2NowNum = now;
             int progress = Convert.ToInt32(Math.Round(Convert.ToDouble(this.progress2NowNum) / Convert.ToDouble(this.progress2MaxNum) * 100));
             string statusString = string.Format("{0} ({1}/{2}) {3}%", this.status2, this.progress2NowNum, this.progress2MaxNum, progress);
             if (multiThread == false)
@@ -55,12 +56,12 @@ namespace UI
 
         public void SetStatus1(string status)
         {
-            this.status1 = status;
+            status1 = status;
         }
 
         public void SetStatus2(string status)
         {
-            this.status2 = status;
+            status2 = status;
         }
 
         private void toolStripStatusLabel1_Click(object sender, EventArgs e)
@@ -74,8 +75,8 @@ namespace UI
             label1.Text = lang.fetch("合成进度：");
             label2.Text = lang.fetch("拼接进度：");
             labelStatus.Text = lang.fetch("加载中……");
-            Control.CheckForIllegalCrossThreadCalls = false;
-            string batFile = System.Environment.CurrentDirectory + "\\temp.bat";
+            CheckForIllegalCrossThreadCalls = false;
+            string batFile = Environment.CurrentDirectory + "\\temp.bat";
             if (!this.config.showConsole)
             {
                 Utils.hideBat();
@@ -85,9 +86,18 @@ namespace UI
                 labelStatus.Text = lang.fetch("正在解析数据……");
                 try
                 {
+                    // 显示bat内容
+                    using (StreamReader sr = new StreamReader(batFile, Encoding.UTF8))
+                    {
+                        textBox1.Text = sr.ReadToEnd();
+                        byte[] mybyte = Encoding.UTF8.GetBytes(textBox1.Text);
+                        textBox1.Text = Encoding.UTF8.GetString(mybyte);
+                    }
+                    // 开始合成
                     Resampler resampler = new Resampler(batFile, this);
                     Thread thread = new Thread(new ThreadStart(resampler.synthetise));
                     thread.Start();
+
                 }
                 catch (FileNotFoundException fe)
                 {
@@ -128,7 +138,7 @@ namespace UI
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("点我干什么，活着不耐烦了吗？？？？？？");
         }
 
         private void progressBar2_Click(object sender, EventArgs e)

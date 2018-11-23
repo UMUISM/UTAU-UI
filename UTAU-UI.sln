@@ -7,12 +7,18 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UTAU-UI", "UTAU-UI\UTAU-UI.
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
 		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0DBE957C-9543-4357-9A40-26A84BDF4986}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DBE957C-9543-4357-9A40-26A84BDF4986}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0DBE957C-9543-4357-9A40-26A84BDF4986}.Debug|x86.ActiveCfg = Debug|x86
 		{0DBE957C-9543-4357-9A40-26A84BDF4986}.Debug|x86.Build.0 = Debug|x86
+		{0DBE957C-9543-4357-9A40-26A84BDF4986}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DBE957C-9543-4357-9A40-26A84BDF4986}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0DBE957C-9543-4357-9A40-26A84BDF4986}.Release|x86.ActiveCfg = Release|x86
 		{0DBE957C-9543-4357-9A40-26A84BDF4986}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
