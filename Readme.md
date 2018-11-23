@@ -21,3 +21,6 @@ A GUI UTAU Engine progress
 	</options>
 </config>
 ```
+## 下载
+
+[下载页面](https://github.com/740291272/UTAU-UI/releases)
