@@ -49,18 +49,18 @@
             this.progressResampler.ForeColor = System.Drawing.Color.Red;
             this.progressResampler.Location = new System.Drawing.Point(12, 25);
             this.progressResampler.Name = "progressResampler";
-            this.progressResampler.Size = new System.Drawing.Size(778, 23);
+            this.progressResampler.Size = new System.Drawing.Size(866, 23);
             this.progressResampler.TabIndex = 0;
             this.progressResampler.Click += new System.EventHandler(this.progressBar1_Click);
             // 
             // statusStrip1
             // 
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.labelStatus,
-            this.labelStatusWavtool});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 573);
+            this.labelStatusWavtool,
+            this.labelStatus});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 425);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(802, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(890, 22);
             this.statusStrip1.SizingGrip = false;
             this.statusStrip1.TabIndex = 1;
             this.statusStrip1.Text = "statusStrip1";
@@ -103,7 +103,7 @@
             this.progressWavtool.ForeColor = System.Drawing.Color.Red;
             this.progressWavtool.Location = new System.Drawing.Point(12, 80);
             this.progressWavtool.Name = "progressWavtool";
-            this.progressWavtool.Size = new System.Drawing.Size(778, 23);
+            this.progressWavtool.Size = new System.Drawing.Size(866, 23);
             this.progressWavtool.TabIndex = 4;
             this.progressWavtool.Click += new System.EventHandler(this.progressBar2_Click);
             // 
@@ -113,7 +113,7 @@
             this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
             this.pictureBox1.Location = new System.Drawing.Point(12, 123);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(345, 447);
+            this.pictureBox1.Size = new System.Drawing.Size(345, 299);
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
@@ -124,14 +124,14 @@
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.textBox1.Size = new System.Drawing.Size(426, 460);
+            this.textBox1.Size = new System.Drawing.Size(514, 299);
             this.textBox1.TabIndex = 6;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(802, 595);
+            this.ClientSize = new System.Drawing.Size(890, 447);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.progressWavtool);

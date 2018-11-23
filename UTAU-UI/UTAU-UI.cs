@@ -128,7 +128,7 @@ namespace UI
 
         private void progressBar1_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("嘤嘤嘤，你点我QAQ");
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -143,7 +143,7 @@ namespace UI
 
         private void progressBar2_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("嘤嘤嘤，你点我QAQ");
         }
     }
 }
