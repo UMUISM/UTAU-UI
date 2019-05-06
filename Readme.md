@@ -1,6 +1,8 @@
 # UTAU-UI
 A GUI UTAU Engine progress
 
+[![Build status](https://ci.appveyor.com/api/projects/status/4eagqnkulv7mpyi4?svg=true)](https://ci.appveyor.com/project/GloomyGhost-MosquitoCoil/utau-ui)
+
 ## 使用说明
 ![1](https://raw.githubusercontent.com/740291272/UTAU-UI/master/pic/1.png)
 
