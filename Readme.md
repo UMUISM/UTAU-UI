@@ -4,7 +4,7 @@ A GUI UTAU Engine progress
 [![Build status](https://ci.appveyor.com/api/projects/status/4eagqnkulv7mpyi4?svg=true)](https://ci.appveyor.com/project/GloomyGhost-MosquitoCoil/utau-ui)
 
 ## 使用说明
-![1](https://raw.githubusercontent.com/740291272/UTAU-UI/master/pic/1.png)
+![](pic/1.png)
 
 将resampler与wavtool设置为UTAU-UI即可
 
@@ -25,4 +25,4 @@ A GUI UTAU Engine progress
 ```
 ## 下载
 
-[下载页面](https://github.com/740291272/UTAU-UI/releases)
+[下载页面](https://github.com/umuism/UTAU-UI/releases)
